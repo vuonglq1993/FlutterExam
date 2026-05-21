@@ -1,0 +1,57 @@
+{
+  "info": {
+    "name": "TravelApp API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Places",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/places"
+      }
+    },
+    {
+      "name": "Get Place By Id",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/places/1"
+      }
+    },
+    {
+      "name": "Create Place",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:8080/api/places",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Hoi An\",\n  \"location\": \"Quang Nam\",\n  \"imageUrl\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Hoi_An_Covered_Bridge.jpg/1200px-Hoi_An_Covered_Bridge.jpg\",\n  \"rating\": 4.0\n}"
+        }
+      }
+    },
+    {
+      "name": "Update Place",
+      "request": {
+        "method": "PUT",
+        "url": "http://localhost:8080/api/places/1",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Hoi An Ancient Town\",\n  \"location\": \"Quang Nam\",\n  \"imageUrl\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Hoi_An_Covered_Bridge.jpg/1200px-Hoi_An_Covered_Bridge.jpg\",\n  \"rating\": 4.8\n}"
+        }
+      }
+    },
+    {
+      "name": "Delete Place",
+      "request": {
+        "method": "DELETE",
+        "url": "http://localhost:8080/api/places/1"
+      }
+    }
+  ]
+}

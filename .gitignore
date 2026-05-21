@@ -1,0 +1,30 @@
+# Flutter
+exam/.dart_tool/
+exam/.flutter-plugins
+exam/.flutter-plugins-dependencies
+exam/.packages
+exam/build/
+exam/.idea/
+exam/*.iml
+
+# Spring Boot
+backend/target/
+backend/.mvn/
+backend/*.log
+backend/mvnw
+backend/mvnw.cmd
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+
+# Env
+.env
+backend/.env
+
+# OS
+.DS_Store
+Thumbs.db
